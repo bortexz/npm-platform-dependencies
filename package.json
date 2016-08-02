@@ -6,6 +6,10 @@
   "bin": {
     "npmpd": "index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bertofer/npm-platform-dependencies"
+  },
   "keywords": [
     "os",
     "dependency",
