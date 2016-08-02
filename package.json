@@ -1,0 +1,28 @@
+{
+  "name": "npm-platform-dependencies",
+  "version": "0.0.1",
+  "description": "Module to specify dependencies for different operating systems.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "bin": {
+    "npmpd": "index.js"
+  },
+  "keywords": [
+    "os",
+    "dependency",
+    "install",
+    "dependencies",
+    "operating",
+    "system"
+  ],
+  "author": "Alberto Fernandez",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^7.1.2"
+  },
+  "dependencies": {
+    "cross-spawn": "^4.0.0"
+  }
+}
