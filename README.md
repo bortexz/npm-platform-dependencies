@@ -10,10 +10,10 @@ Install via:
 Specify the specific dependencies for each platform, like:
 
 ```
-"darwinDependences": {
+"darwinDependencies": {
     "nodobjc": "latest"
 },
-"win32Dependences": {
+"win32Dependencies": {
     "edge": "latest"
 }
 ```
@@ -41,7 +41,7 @@ I came across a problem where it would be useful to specify platform specific de
 os frameworks (Cocoa, .NET...). This is an easy solution if you don't want to deal with building a native addon with [node-gyp](https://github.com/nodejs/node-gyp), if
 the functionalities you need are already in different os specific packages.
 
-Another use case would be when dealing with wrappers of os specific programs, and you want to link to want or the other depending the platform you run your program with.
+Another use case would be when dealing with wrappers of os specific programs, and you want to link to one or the other depending the platform you run your program with.
 
 ## License
 
