@@ -1,6 +1,6 @@
 {
   "name": "npm-platform-dependencies",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Module to specify dependencies for different operating systems.",
   "main": "index.js",
   "bin": {
