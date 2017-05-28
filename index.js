@@ -11,7 +11,7 @@ var spawn = require('cross-spawn')
 var dependencies = platform + 'Dependencies'
 var dependenciesObj = pkg[dependencies]
 
-if (dependenciesObj) {
+if (dependenciesObj && Object.keys(dependenciesObj).length) {
   log('Installing dependencies for ' + platform)
   var npmArgs = ['install']
   for (var dep in dependenciesObj) {
