@@ -13,7 +13,7 @@ var dependenciesObj = pkg[dependencies]
 
 if (dependenciesObj && Object.keys(dependenciesObj).length) {
   log('Installing dependencies for ' + platform)
-  var npmArgs = ['install']
+  var npmArgs = ['install', '--no-save']
   for (var dep in dependenciesObj) {
     if (dependenciesObj.hasOwnProperty(dep)) {
       npmArgs.push(dep.concat('@').concat(dependenciesObj[dep]))
