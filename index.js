@@ -14,6 +14,8 @@ var dependenciesObj = pkg[dependencies]
 if (dependenciesObj && Object.keys(dependenciesObj).length) {
   log('Installing dependencies for ' + platform)
   var npmArgs = ['install', '--no-save']
+  // Append any arguments from commandline
+  npmArgs = npmArgs.concat(process.argv.slice(2));
   for (var dep in dependenciesObj) {
     if (dependenciesObj.hasOwnProperty(dep)) {
       npmArgs.push(dep.concat('@').concat(dependenciesObj[dep]))
