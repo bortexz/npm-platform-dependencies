@@ -13,7 +13,7 @@ var dependenciesObj = pkg[dependencies]
 
 if (dependenciesObj && Object.keys(dependenciesObj).length) {
   log('Installing dependencies for ' + platform)
-  var npmArgs = ['install', '--no-save']
+  var npmArgs = ['install']
   // Append any arguments from commandline
   npmArgs = npmArgs.concat(process.argv.slice(2));
   for (var dep in dependenciesObj) {
