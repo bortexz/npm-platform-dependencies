@@ -33,6 +33,18 @@ To use it just after npm install, put this script on the scripts section of pack
 "postinstall": "npmpd"
 ```
 
+## Append your own arguments to the install process
+Simply add any arguments to the npmpd call to have them appended to the `npm install` process.
+The example below shows how you could append the `--ignore-scripts` argument to the install process.
+```
+npmpd --ignore-scripts
+```
+
+Or append the arguments at the scripts section of package.json
+```
+"postinstall": "npmpd --ignore-scripts"
+```
+
 ## Inside the code
 Be sure to make your code detect the platform you are running on, or you will end up requiring things you don't have installed!
 
